@@ -1,10 +1,10 @@
-void towerOfHanoi(int m, char source, char auxiliary, char destination)
+void towerOfHanoi(int m, char sourc, char auxiliary, char destinatio)
 {
 	if(m==0)	
 	{
 		return;
 	}
-    towerOfHanoi(m-1,sourc,destination,auxiliary);
+    towerOfHanoi(m-1,sourc,destinatio,auxiliary);
      cout<<source<<" "<<destination<<endl;
-    towerOfHanoi(m-1,auxiliary,sourc,destination);
+    towerOfHanoi(m-1,auxiliary,sourc,destinatio);
 }
